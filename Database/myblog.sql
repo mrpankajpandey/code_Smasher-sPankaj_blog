@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 13, 2023 at 01:16 PM
+-- Generation Time: Sep 14, 2023 at 09:47 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `blog_category` (
-  `id` int(11) NOT NULL ,
+  `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
-  `meta_title` varchar(255) NOT NULL,
-  `meta_description` int(255) NOT NULL,
-  `meta_keywords` int(255) NOT NULL,
+  `meta_title` mediumtext NOT NULL,
+  `meta_description` text NOT NULL,
+  `meta_keywords` mediumtext NOT NULL,
   `status` tinyint(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -42,11 +42,11 @@ CREATE TABLE `blog_category` (
 --
 
 INSERT INTO `blog_category` (`id`, `name`, `url`, `meta_title`, `meta_description`, `meta_keywords`, `status`) VALUES
-(1, 'python', 'python-stuffs-', 'python, web, ml, AI ', 0, 0, 0),
-(2, 'html', 'html-tutorial', 'html, css , web ', 0, 0, 0),
-(3, 'bootstrap', 'bootstrap-org', 'bootstarp', 0, 0, 0),
-(4, 'php', 'Php-stuffs', 'html, css , web , php is web backend language', 0, 0, 0),
-(5, 'dbms', 'learn-dbms', 'Database management system is backbone of world also data ', 0, 0, 0);
+(1, 'python', 'python-stuffs-', 'python, web, ml, AI ', '0', '0', 0),
+(2, 'html', 'html-tutorial', 'html, css , web ', '0', '0', 0),
+(3, 'bootstrap', 'bootstrap-org', 'bootstarp', '0', '0', 0),
+(4, 'php', 'Php-stuffs', 'html, css , web , php is web backend language', '0', '0', 0),
+(5, 'dbms', 'learn-dbms', 'Database management system is backbone of world also data ', '0', '0', 0);
 
 -- --------------------------------------------------------
 
