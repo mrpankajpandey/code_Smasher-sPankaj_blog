@@ -23,11 +23,11 @@ include("Includes/header.php");
             </div>
             <div class="card-body">
                 <?php
-                if(isset($_GET['role'])){
-                    if($_GET['role']=='1'){
-                    $user_role = $_GET['role'];
+                if(isset($_GET['id'])){
+                  
+                    $user_id = $_GET['id'];
                     
-                    $user_query = "SELECT * FROM users WHERE role ='$user_role' ";
+                    $user_query = "SELECT * FROM users WHERE id ='$user_id' ";
                     $user_query_run = mysqli_query($conn, $user_query);
 
                     if(mysqli_num_rows($user_query_run) > 0){
@@ -83,11 +83,7 @@ include("Includes/header.php");
                         <h4>No Record found</h4>
                         <?php
                     }
-                } else{
-                    ?> 
-                    <h4>No Record found</h4>
-                    <?php
-                }
+               
                 }
                 ?>
             </div>

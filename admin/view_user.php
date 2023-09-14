@@ -47,7 +47,7 @@ include("Includes/header.php");
                                         <?php
                                           if($row['role']=="1"){
                                             echo "Admin";
-                                           ?> <td><a href="edit-admin.php?role=<?=$row['role']; ?>" class="btn btn-success">Edit</a></td>
+                                           ?> <td><a href="edit-admin.php?id=<?=$row['id']; ?>" class="btn btn-success">Edit</a></td>
                                         <?php  }elseif($row['role']=="0"){
                                              echo "User";
                                           ?>  <td></td>

@@ -244,7 +244,7 @@ if(isset($_POST['update_btn'])){
 
     if($oPass == $Oldpassword){
         
-         $query =" UPDATE users SET name='$name', email='$email', password='$Newpassword', status='$status' WHERE role= '$role' ";
+         $query =" UPDATE users SET name='$name', email='$email', password='$Newpassword', status='$status' WHERE id= '$user_id' ";
 
            $query_run =  mysqli_query($conn, $query);
    
