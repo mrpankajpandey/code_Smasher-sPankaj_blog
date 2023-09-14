@@ -98,14 +98,7 @@ if(isset($_POST['category_update'])){
     $meta_description = $_POST['meta_description'];
     $keywords= $_POST['meta_keywords'];
     $status = $_POST['status']==true ? '1':'0';
-    $check_category = "SELECT name FROM blog_category  WHERE name ='$name'";
-    $check_category_run = mysqli_query($conn, $check_category);
-    
-    if(mysqli_num_rows($check_category_run) > 0){
-         $_SESSION['message']= "Category already Exists";
-        header('Location: category-edit.php?id='.$category_id);
-        exit(0);
-    }else{
+
     $query =" UPDATE blog_category SET name='$name', url='$url', meta_title='$title', meta_description='$meta_description', meta_keywords='$keywords' , status= '$status' WHERE id = '$category_id' ";
 
     $query_run =  mysqli_query($conn, $query);
@@ -119,7 +112,7 @@ if(isset($_POST['category_update'])){
         header('Location:category-edit.php?id='.$category_id );
         exit(0);
     }
-}
+
 }
 
 // Delete category
