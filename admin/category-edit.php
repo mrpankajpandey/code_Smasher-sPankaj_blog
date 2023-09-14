@@ -47,7 +47,7 @@ include("Includes/header.php");
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Name</label>
-                            <input type="text"  value= "<?= strtoupper($item['name']);?>" name="name" class="form-control">
+                            <input type="text" readonly ="true" value= "<?= strtoupper($item['name']);?>" name="name" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">url</label>
