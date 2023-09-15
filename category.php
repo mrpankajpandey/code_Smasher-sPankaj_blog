@@ -37,7 +37,7 @@
                         <h5 class="text-dark me-2"><?= $p_item['title'] ?></h5>
                     </div>
                     <div class="card-body">
-                        <h5>Posts Discription</h5>
+                        <h5>Posts Description</h5>
                         <p class="text-dark me-2"><?= $p_item['post_content']?></p>
 
                     </div>
