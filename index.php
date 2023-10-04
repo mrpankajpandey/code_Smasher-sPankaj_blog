@@ -31,7 +31,7 @@
                     
                     </div>
                     <div class="card-body">
-                        <h5>Posts Discription</h5>
+                        <h5>Posts Description</h5>
                         <p class="text-dark me-2"><?= $item['post_content']?></p>
 
                     </div>

@@ -19,7 +19,8 @@ include("Includes/header.php");
                 
             </div>
             <div class="card-body">
-                <table class="table table-bordered">
+                <div class="table-responsive">
+                <table class="table table-bordered table-stripe">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -75,6 +76,7 @@ include("Includes/header.php");
                         ?>
                     </tbody>
                         </table>
+                    </div>
             </div>
         </div>
     </div>
