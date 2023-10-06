@@ -26,23 +26,23 @@ include("Includes/header.php");
                 
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Name</label>
-                            <input type="text"  value= "" name="name" class="form-control">
+                            <input required type="text"  value= "" name="name" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Url</label>
-                            <input type="text"  value= "" name="url" class="form-control">
+                            <input required type="text"  value= "" name="url" class="form-control">
                         </div>
                         <div class="col-md-12 mb-3">
                             <label for="" class="form-label">Meta Title</label>
-                            <input type="text" value= "" name="meta_title" class="form-control">
+                            <input required type="text" value= "" name="meta_title" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Meta Discription</label>
-                            <textarea type="textarea" value= "" name="meta_description" rows="4" class="form-control"></textarea>
+                            <textarea required type="textarea" value= "" name="meta_description" rows="4" class="form-control"></textarea>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Meta Keyword</label>
-                            <textarea type="textarea" name="meta_keywords" class="form-control"rows="4" ></textarea>
+                            <textarea required type="textarea" name="meta_keywords" class="form-control"rows="4" ></textarea>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Status</label>

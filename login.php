@@ -37,12 +37,12 @@ if(isset($_SESSION['auth'])){
 					  
   						<div class="form-group">
   							<label for="username" class="control-label">Email</label>
-  							<input type="text" id="username" name="email" class="form-control">
+  							<input required type="email" id="username" name="email" class="form-control">
   						</div>
 
   						<div class="form-group">
   							<label for="password" class="control-label">Password</label>
-  							<input type="password" id="txtPassword" name="password" class="form-control">
+  							<input required type="password" id="txtPassword" name="password" class="form-control">
                            
   						</div>
 						  <div class="form-check mt-2">

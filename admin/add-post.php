@@ -53,29 +53,29 @@ include("Includes/header.php");
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Title</label>
-                            <input type="text" required value= "" name="title" class="form-control">
+                            <input required type="text" required value= "" name="title" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">URL</label>
-                            <input type="text" required value= "" name="url" class="form-control">
+                            <input required type="text" required value= "" name="url" class="form-control">
                         </div> 
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Meta Title</label>
-                            <input type="text" required value= "" name="meta_title" class="form-control">
+                            <input required type="text" required value= "" name="meta_title" class="form-control">
                         </div>
                         
                         <div class="col-md-12 mb-3">
                             <label for="" class="form-label">Post Content</label>
-                            <textarea id="summernote" type="textarea" value= "" name="post_content" rows="4" class="form-control"></textarea>
+                            <textarea required id="summernote" type="textarea" value= "" name="post_content" rows="4" class="form-control"></textarea>
                         </div>
                         
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Meta Description</label>
-                            <textarea type="textarea" name="meta_description" class="form-control"rows="4" ></textarea>
+                            <textarea required type="textarea" name="meta_description" class="form-control"rows="4" ></textarea>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Meta Keyword</label>
-                            <textarea type="textarea" name="meta_keywords" class="form-control"rows="4" ></textarea>
+                            <textarea required type="textarea" name="meta_keywords" class="form-control"rows="4" ></textarea>
                         </div>
                     
                         <div class="col-md-6 mt-5">

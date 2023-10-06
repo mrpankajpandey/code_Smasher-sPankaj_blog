@@ -69,11 +69,11 @@ include("Includes/header.php");
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Title</label>
-                            <input type="text"  value= "<?= $post_row['title']?>" name="title" class="form-control">
+                            <input required type="text"  value= "<?= $post_row['title']?>" name="title" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">URL</label>
-                            <input type="text"  value= "<?= $post_row['url']?>" name="url" class="form-control">
+                            <input required type="text"  value= "<?= $post_row['url']?>" name="url" class="form-control">
                         </div> 
                         <div class="col-md-12 mb-3">
                             <label for="" class="form-label">Meta Title</label>
@@ -81,15 +81,15 @@ include("Includes/header.php");
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Meta Description</label>
-                            <textarea type="textarea" name="meta_description" class="form-control"rows="4" ></textarea>
+                            <textarea required type="textarea" name="meta_description" class="form-control"rows="4" ><?= $post_row['meta_description']?></textarea>
                         </div>
                          <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Meta Keyword</label>
-                            <textarea type="textarea" name="meta_keywords" class="form-control"rows="4" ><?= $post_row['meta_keywords']?></textarea>
+                            <textarea required type="textarea" name="meta_keywords" class="form-control"rows="4" ><?= $post_row['meta_keywords']?></textarea>
                         </div>
                         <div class="col-md-12 mb-3">
                             <label for="" class="form-label">Post Discription</label>
-                            <textarea type="textarea" id="summernote" name="post_content" rows="4" class="form-control"><?= $post_row['post_content']?> </textarea>
+                            <textarea  required type="textarea" id="summernote" name="post_content" rows="4" class="form-control"><?= $post_row['post_content']?> </textarea>
                         </div>
                     
                         <div class="col-md-6 mt-5">

@@ -37,7 +37,7 @@ if(isset($_SESSION['auth'])){
   						</div>
   						<div class="form-group">
   							<label for="username" class="control-label">Email</label>
-  							<input required type="text" id="username" name="email" class="form-control">
+  							<input required type="email" id="username" name="email" class="form-control">
   						</div>
 
   						<div class="form-group">

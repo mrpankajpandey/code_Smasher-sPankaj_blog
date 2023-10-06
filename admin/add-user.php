@@ -24,15 +24,15 @@ include("Includes/header.php");
                 
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Name</label>
-                            <input type="text"  value= "" name="name" class="form-control">
+                            <input required type="text"  value= "" name="name" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Email</label>
-                            <input type="text" value= "" name="email" class="form-control">
+                            <input required type="email" value= "" name="email" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Password</label>
-                            <input type="text" value= "" name="password" class="form-control">
+                            <input required type="text" value= "" name="password" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Role</label>

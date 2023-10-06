@@ -44,19 +44,19 @@ include("Includes/header.php");
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Name</label>
-                            <input type="text"  value= "<?= $user['name'];?>" name="name" class="form-control">
+                            <input required type="text"  value= "<?= $user['name'];?>" name="name" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Email</label>
-                            <input type="text" value= "<?= $user['email'];?>" name="email" class="form-control">
+                            <input required type="email" value= "<?= $user['email'];?>" name="email" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">New Password</label>
-                            <input type="text" value= "" name="Newpassword" class="form-control">
+                            <input required type="text" value= "" name="Newpassword" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Old Password</label>
-                            <input type="text" value= "" name="password" class="form-control">
+                            <input required type="text" value= "" name="password" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Role</label>

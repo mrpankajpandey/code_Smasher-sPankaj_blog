@@ -47,23 +47,23 @@ include("Includes/header.php");
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Name</label>
-                            <input type="text" readonly ="true" value= "<?= strtoupper($item['name']);?>" name="name" class="form-control">
+                            <input required type="text" readonly ="true" value= "<?= strtoupper($item['name']);?>" name="name" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">url</label>
-                            <input type="text"  value= "<?= $item['url'];?>" name="url" class="form-control">
+                            <input required type="text"  value= "<?= $item['url'];?>" name="url" class="form-control">
                         </div>
                         <div class="col-md-12 mb-3">
                             <label for="" class="form-label">Title</label>
-                            <input type="text" value="<?= $item['meta_title'];?>"  name="meta_title" class="form-control">
+                            <input required type="text" value="<?= $item['meta_title'];?>"  name="meta_title" class="form-control">
                         </div>
                         <div class="col-md-12 mb-3">
                             <label for="" class="form-label">Meta Discription</label>
-                            <textarea type="textarea"  name="meta_description" rows="4" class="form-control"><?= $item['meta_description'];?></textarea>
+                            <textarea required type="textarea"  name="meta_description" rows="4" class="form-control"><?= $item['meta_description'];?></textarea>
                         </div>
                         <div class="col-md-12 mb-3">
                             <label for="" class="form-label">Meta Keyword</label>
-                            <textarea type="textarea"  name="meta_keywords" class="form-control"rows="4" ><?= $item['meta_keywords'];?></textarea>
+                            <textarea required type="textarea"  name="meta_keywords" class="form-control"rows="4" ><?= $item['meta_keywords'];?></textarea>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="" class="form-label">Status</label>
