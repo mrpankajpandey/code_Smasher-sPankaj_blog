@@ -22,7 +22,7 @@
 
                             ?>
 
-                <div class="mb-3 card shadow-sm mb-4">
+                <div class="mb-4 card shadow-sm">
                     <div class="card-header">
                         <!-- <div class="post-title ">
                         <h4 >Posts Title </h4>

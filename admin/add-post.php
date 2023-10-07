@@ -31,7 +31,7 @@ include("Includes/header.php");
 
                                 ?> 
                                 <select name="category_id" required class="form-control" id="">
-                                    <option value="">....Select Category....</option>
+                                    <option required value="">....Select Category....</option>
                                     <?php foreach($category_run as $category_item){
                                            ?>
                                              <option value="<?= $category_item['id'] ?>"> <?= $category_item['name'] ?> </option>

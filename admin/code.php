@@ -35,7 +35,7 @@ if(isset($_POST['post_delete'])){
     $meta_description =$_POST['meta_description'];
     $meta_keyword= $_POST['meta_keywords'];
     $status = $_POST['status'] == true ? '1':'0';
-
+  if($category_id>0){
     $query = "UPDATE posts SET category_id ='$category_id' ,title= '$name' , url='$url', post_content='$Post_content', meta_title='$meta_title', meta_description = '$meta_description', meta_keywords='$meta_keyword', status='$status' WHERE id='$post_id' ";
     $query_run = mysqli_query($conn, $query);
     if($query_run){
@@ -47,7 +47,12 @@ if(isset($_POST['post_delete'])){
         header('Location:edit-post.php' );
         exit(0);
     }
+  }else{
+    $_SESSION['message'] = "Category Not Availbale !";
+    header('Location:add-post.php' );
+    exit(0);
 
+  }
  }
 
 
@@ -68,12 +73,12 @@ if(isset($_POST['post_add'])){
     $status = $_POST['status'] == true ? '1':'0';
     // $created_by =$_POST['created_by'];
 
-  
+  if($category_id >0){
 
     $query = "INSERT INTO posts (title, url,  post_content , category_id	, meta_title,  meta_description,	meta_keywords, status ) VALUES ('$name', '$url', '$Post_content', '$category_id', '$meta_title', '$meta_description' ,'$meta_keyword', '$status')";
     $query_run = mysqli_query($conn, $query);
 
-    if($query_run){
+    if($query_run ){
         
 
         $_SESSION['message'] = " Post Added  Successfully";
@@ -84,7 +89,11 @@ if(isset($_POST['post_add'])){
         header('Location:add-post.php' );
         exit(0);
     }
-
+  }else{
+    $_SESSION['message'] = "Category Not Availbale !";
+    header('Location:add-post.php' );
+    exit(0);
+  }
 }
 
 // update category
@@ -118,7 +127,7 @@ if(isset($_POST['category_update'])){
 // Delete category
 if(isset($_POST['delete_category'])){
     $category_id=$_POST['delete_category'];
-    $query = "UPDATE blog_category SET status = '2' WHERE id = $category_id LIMIT 1";
+    $query = "DELETE FROM blog_category WHERE  id = $category_id LIMIT 1";
     $query_run = mysqli_query($conn, $query);
     if($query_run){
         $_SESSION['message']= "Category deleted Successfully!";

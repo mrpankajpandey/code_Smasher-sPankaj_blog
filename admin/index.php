@@ -7,7 +7,11 @@ include("Includes/header.php");
 
 
 <div class="container-fluid px-4">
+  
  <h1 class="mt-4">PHP Admin Pannel</h1>
+   <?php
+      include('message.php')
+     ?>
   <ol class="breadcrumb mb-4">
       <li class="breadcrumb-item active">Admin Pannel</li>
    </ol>
